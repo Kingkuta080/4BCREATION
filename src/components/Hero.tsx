@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { Bg1, Bg3 } from '@/assets';
 
 const Hero = () => {
   // Staggered animation for text elements
@@ -26,7 +26,7 @@ const Hero = () => {
     <section
       className="min-h-screen relative flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: 'url(../public/bg1.png)',
+        backgroundImage: `url(${Bg1})`,
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

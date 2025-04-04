@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUserTie, FaChartLine, FaGlobeAmericas, FaTrophy, FaUserFriends } from 'react-icons/fa';
+import { Bg } from '@/assets';
 
 const WhyChooseUs = () => {
   const reasons = [
@@ -36,7 +37,7 @@ const WhyChooseUs = () => {
       id="why-us" 
       className="section-padding relative"
       style={{
-        backgroundImage: 'url(../public/bg6.PNG)',
+        backgroundImage: `url(${Bg})`,
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

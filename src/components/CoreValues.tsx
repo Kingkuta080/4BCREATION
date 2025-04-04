@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaStar, FaLightbulb, FaHandshake, FaUsers } from 'react-icons/fa';
+import { Bg2 } from '@/assets';
 
 const CoreValues = () => {
   const values = [
@@ -31,7 +31,7 @@ const CoreValues = () => {
     <section 
       className="section-padding relative"
       style={{
-        backgroundImage: 'url(../public/bg2.PNG)',
+        backgroundImage: `url(${Bg2})`,
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

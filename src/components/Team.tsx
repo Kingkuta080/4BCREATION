@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Bg3, Bg4, Bg5 } from '@/assets';
 
 const Team = () => {
   const teamMembers = [
@@ -11,21 +11,21 @@ const Team = () => {
       name: "ABDULLAHI SIDI-ALIYU",
       position: "CEO",
       bio: "Over 30 years of experience in export development and promotion, business strategy and consulting. Highly accomplished retired civil servant with 35 years of experience in export promotion, economic planning, and research. Proven track record of success in leadership roles, including 10 years as Director at the Nigerian Export Promotion Council (NEPC).",
-      image: "../public/bg4.png",
+      image: Bg4,
       shortBio: "Over 30 years of experience in export development and promotion, business strategy and consulting."
     },
     {
       name: "COLLINS EZEIRUAKU NWOSU",
       position: "Trade Ambassador",
       bio: "Collins Ezeiruaku Nwosu is currently the Trade Ambassador to the International Trade Facilitation Association (ITFA). The focus is helping businesses to boost sales, improve market share through strategic and safe global expansion.",
-      image: "../public/bg3.png",
+      image: Bg3,
       shortBio: "Trade Ambassador to the International Trade Facilitation Association (ITFA)."
     },
     {
       name: "BASHIR ADAMU ALIYU",
       position: "Senior Executive",
       bio: "12 years successful experience providing fiscal, strategic and operational leadership in dynamic and changing markets. Proven achievements with strong technical background in international trade, commodities, regulation and quality assurance. Bilingual - English, Hausa and Arabic. Extensive business background in international trade, multi-cultural environments.",
-      image: "../public/bg5.png",
+      image: Bg5,
       shortBio: "12 years experience providing fiscal and strategic leadership in international trade."
     }
   ];
@@ -71,7 +71,7 @@ const Team = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <img 
-                    src={member.image} 
+                    src={member.image.toString()} 
                     alt={member.name}
                     className="w-full  object-cover object-center transition-transform duration-500"
                   />

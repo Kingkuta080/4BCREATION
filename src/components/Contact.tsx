@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
+import { Bg } from '@/assets';
 
 const Contact = () => {
   const formAnimation = {
@@ -29,7 +30,7 @@ const Contact = () => {
       id="contact" 
       className="section-padding relative py-16 md:py-24 lg:py-32"
       style={{
-        backgroundImage: 'url(../public/bg.png)',
+        backgroundImage: `url(${Bg})`,
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
